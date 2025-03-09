@@ -6,6 +6,7 @@ export default {
             fontFamily: {
                 sans: ['Roboto', 'Amiri', 'sans-serif'],
                 arabic: ['Amiri', 'serif'],
+                scheherazade: ['Scheherazade New', 'serif']
             },
         },
     },

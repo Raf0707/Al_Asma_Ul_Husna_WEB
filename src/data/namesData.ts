@@ -108,7 +108,7 @@ const arabicName: string[] = [
 ];
 
 const transcriptName: string[] = [
-    "",
+    "Аллах",
     "Ар-Рахман ",
     "Ар-Рахим ",
     "Аль-Малик ",
