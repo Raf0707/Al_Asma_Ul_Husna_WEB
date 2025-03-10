@@ -4,4 +4,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  base: '/Al_Asma_Ul_Husna_WEB/',
 })
