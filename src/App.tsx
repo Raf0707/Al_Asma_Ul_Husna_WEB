@@ -1,4 +1,3 @@
-// src/App.tsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Toolbar from "./components/Toolbar";
 import Home from "./pages/Home";
@@ -6,7 +5,7 @@ import About from "./pages/About";
 
 const App = () => {
     return (
-        <Router>
+        <Router basename="/Al_Asma_Ul_Husna_WEB"> {/* Добавил basename */}
             {/* Toolbar отображается на всех экранах */}
             <Toolbar />
 
