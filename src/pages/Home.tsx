@@ -24,14 +24,15 @@ const Home = () => {
                             {/* Кнопка стрелочки */}
                             <button
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                                className="focus:outline-none"
+                                className="focus:outline-none bg-[#4ade80] p-2 rounded"
                             >
                                 {openIndex === index ? (
-                                    <ChevronUp size={24} className="text-[#22c55e]" />
+                                    <ChevronUp size={24} className="#4ade80" />
                                 ) : (
-                                    <ChevronDown size={24} className="text-[#22c55e]" />
+                                    <ChevronDown size={24} className="#4ade80" />
                                 )}
                             </button>
+
                         </div>
 
                         {/* Раскрывающаяся часть */}
