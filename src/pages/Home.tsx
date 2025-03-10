@@ -1,3 +1,4 @@
+// src/pages/Home.tsx
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { namesData, NameData } from "../data/namesData";
@@ -6,9 +7,9 @@ const Home = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (
-        <div className="min-h-screen bg-[#122428] flex flex-col items-center justify-center overflow-y-auto">
+        <div className="min-h-screen bg-[#122428] flex flex-col items-center justify-center overflow-y-auto pt-16">
             {/* Список имен */}
-            <div className="w-screen space-y-4 px-4 py-6">
+            <div className="w-full sm:w-screen space-y-4 px-4 sm:px-12 py-6">
                 {namesData.map((item: NameData, index: number) => (
                     <div
                         key={index}
@@ -17,7 +18,7 @@ const Home = () => {
                         {/* Верхняя часть карточки */}
                         <div className="flex justify-between items-center">
                             {/* Арабское имя */}
-                            <h3 className="text-[90px] font-bold text-[#86efac] text-center w-full">
+                            <h3 className="text-[48px] sm:text-[70px] font-bold text-[#86efac] text-center w-full">
                                 {item.arabicName}
                             </h3>
                             {/* Кнопка стрелочки */}
@@ -37,15 +38,15 @@ const Home = () => {
                         {openIndex === index && (
                             <div className="mt-4 space-y-2 text-center">
                                 {/* Транскрипция */}
-                                <p className="text-[45px] text-[#4ade80]">
+                                <p className="text-[24px] sm:text-[30px] text-[#4ade80]">
                                     <strong>Транскрипция:</strong> {item.transcriptName}
                                 </p>
                                 {/* Перевод */}
-                                <p className="text-[45px] text-[#4ade80]">
+                                <p className="text-[24px] sm:text-[30px] text-[#4ade80]">
                                     <strong>Перевод:</strong> {item.translateName}
                                 </p>
                                 {/* Информация */}
-                                <p className="text-[45px] text-[#4ade80]">
+                                <p className="text-[24px] sm:text-[30px] text-[#4ade80]">
                                     <strong>Информация:</strong> {item.info}
                                 </p>
                             </div>
